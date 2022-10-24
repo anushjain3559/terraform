@@ -14,7 +14,7 @@ variable "az_count" {
 }
 
 variable "key_pair" {
-  default = "congo"
+  default = "JenkinsKP"
 }
 
 variable "instance_type" {
