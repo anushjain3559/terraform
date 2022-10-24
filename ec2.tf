@@ -1,4 +1,3 @@
-
 resource "aws_instance" "docker_instance" {
   count = 1
 
@@ -11,7 +10,8 @@ resource "aws_instance" "docker_instance" {
     user_data              = file("docker_build_image.sh")
   tags = {
     Name = "${var.env}_docker_instance_demo"
-  }}
+  }
+}
 #  provisioner "file" {
 #     source      = "/Users/chinazamdennar/Downloads/test/passwd.txt"
 #     destination = "/home/ubuntu/passwd.txt"
