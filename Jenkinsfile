@@ -25,7 +25,7 @@ pipeline {
         }
         stage ('Terraform Apply'){
             steps {
-                sh "export TF_VAR_region='${env.aws_region}' && export TF_VAR_access_key='${env.access_key}' && export TF_VAR_secret_key='${env.secret_key}' && terraform apply --auto=approve"
+                sh "export TF_VAR_region='${env.aws_region}' && export TF_VAR_access_key='${env.access_key}' && export TF_VAR_secret_key='${env.secret_key}' && terraform apply --auto-approve"
             }
         }
     }
