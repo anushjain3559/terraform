@@ -19,7 +19,7 @@ resource "aws_instance" "docker_instance" {
     connection {
       type        = "ssh"
       user        = "ubuntu"
-      private_key = file("/Users/chinazamdennar/Downloads/congo.pem")
+      private_key = file("JenkinsKP.ppk")
       host        = aws_instance.docker_instance[0].public_ip
       timeout     = "3m"
       agent       = false
@@ -31,7 +31,7 @@ resource "aws_instance" "docker_instance" {
     connection {
       type        = "ssh"
       user        = "ubuntu"
-      private_key = file("/Users/chinazamdennar/Downloads/congo.pem")
+      private_key = file("JenkinsKP.ppk")
       host        = aws_instance.docker_instance[0].public_ip
       timeout     = "3m"
       agent       = false
@@ -45,7 +45,7 @@ resource "aws_instance" "docker_instance" {
     connection {
       type        = "ssh"
       user        = "ubuntu"
-      private_key = file("/Users/chinazamdennar/Downloads/congo.pem")
+      private_key = file("JenkinsKP.ppk")
       host        = aws_instance.docker_instance[0].public_ip
       timeout     = "3m"
       agent       = false
@@ -62,7 +62,7 @@ resource "aws_instance" "docker_instance" {
     connection {
       type        = "ssh"
       user        = "ubuntu"
-      private_key = file("/Users/chinazamdennar/Downloads/congo.pem")
+      private_key = file("JenkinsKP.ppk")
       host        = aws_instance.docker_instance[0].public_ip
       timeout     = "3m"
       agent       = false
